@@ -72,7 +72,7 @@ Columns:
 ```text
 CurrencyExchangeAnalysis
 │
-├── app.py
+├── app1.py
 │
 ├── task1_cleaning_setD.py
 ├── task2_rolling_setD.py
