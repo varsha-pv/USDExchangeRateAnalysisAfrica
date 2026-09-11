@@ -70,7 +70,7 @@ Columns:
 ## Project Structure
 
 ```text
-HACK2/
+CurrencyExchangeAnalysis
 │
 ├── app.py
 │
