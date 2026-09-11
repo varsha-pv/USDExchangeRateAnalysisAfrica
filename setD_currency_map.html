@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e5abcb66db0b199174a5d96f1a025bc6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e5abcb66db0b199174a5d96f1a025bc6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e5abcb66db0b199174a5d96f1a025bc6 = L.map(
+                "map_e5abcb66db0b199174a5d96f1a025bc6",
+                {
+                    center: [8.0, 25.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_936ee89b27e19f8b5c6aa94e110b0f70 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_936ee89b27e19f8b5c6aa94e110b0f70.addTo(map_e5abcb66db0b199174a5d96f1a025bc6);
+        
+    
+            var marker_216cea87b56e503db70b0fbe90a070a5 = L.marker(
+                [26.8206, 30.8025],
+                {
+}
+            ).addTo(map_e5abcb66db0b199174a5d96f1a025bc6);
+        
+    
+            var icon_0b4f936a53c8c2e6aa41b7fda77ddd98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "usd",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02f6b959d97dfa4f09b8a9fc317df93b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_36861dfa8868601bd522ef9776625ce3 = $(`<div id="html_36861dfa8868601bd522ef9776625ce3" style="width: 100.0%; height: 100.0%;">     <b>Egypt (EGP)</b><br>     Pair: USDEGP<br>     Start rate: 30.4372<br>     End rate: 58.8366<br>     Exchange-rate change: 93.30%<br>     Local currency value change: -48.27%     </div>`)[0];
+                popup_02f6b959d97dfa4f09b8a9fc317df93b.setContent(html_36861dfa8868601bd522ef9776625ce3);
+            
+        
+
+        marker_216cea87b56e503db70b0fbe90a070a5.bindPopup(popup_02f6b959d97dfa4f09b8a9fc317df93b)
+        ;
+
+        
+    
+    
+            marker_216cea87b56e503db70b0fbe90a070a5.bindTooltip(
+                `<div>
+                     Egypt — EGP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_216cea87b56e503db70b0fbe90a070a5.setIcon(icon_0b4f936a53c8c2e6aa41b7fda77ddd98);
+            
+    
+            var marker_e60139d9ebe024f5c3e465844c3416ad = L.marker(
+                [-0.0236, 37.9062],
+                {
+}
+            ).addTo(map_e5abcb66db0b199174a5d96f1a025bc6);
+        
+    
+            var icon_fb428e44eb4fc750499abcf70fc8ae6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "usd",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63930906c752ddff642d6b02ac05ead9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4ba8b3a238060799153396844d4113d0 = $(`<div id="html_4ba8b3a238060799153396844d4113d0" style="width: 100.0%; height: 100.0%;">     <b>Kenya (KES)</b><br>     Pair: USDKES<br>     Start rate: 123.6843<br>     End rate: 143.3794<br>     Exchange-rate change: 15.92%<br>     Local currency value change: -13.74%     </div>`)[0];
+                popup_63930906c752ddff642d6b02ac05ead9.setContent(html_4ba8b3a238060799153396844d4113d0);
+            
+        
+
+        marker_e60139d9ebe024f5c3e465844c3416ad.bindPopup(popup_63930906c752ddff642d6b02ac05ead9)
+        ;
+
+        
+    
+    
+            marker_e60139d9ebe024f5c3e465844c3416ad.bindTooltip(
+                `<div>
+                     Kenya — KES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e60139d9ebe024f5c3e465844c3416ad.setIcon(icon_fb428e44eb4fc750499abcf70fc8ae6e);
+            
+    
+            var marker_9eea26e11769926524033a2c73ed3274 = L.marker(
+                [9.082, 8.6753],
+                {
+}
+            ).addTo(map_e5abcb66db0b199174a5d96f1a025bc6);
+        
+    
+            var icon_bf536c14a065589d7ab3b4c248a7bf37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "usd",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b85e8df7a06860b6a8b7d53c70900466 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fae77f7b680a17031ad20bf4a71779b8 = $(`<div id="html_fae77f7b680a17031ad20bf4a71779b8" style="width: 100.0%; height: 100.0%;">     <b>Nigeria (NGN)</b><br>     Pair: USDNGN<br>     Start rate: 466.4363<br>     End rate: 1782.6446<br>     Exchange-rate change: 282.18%<br>     Local currency value change: -73.83%     </div>`)[0];
+                popup_b85e8df7a06860b6a8b7d53c70900466.setContent(html_fae77f7b680a17031ad20bf4a71779b8);
+            
+        
+
+        marker_9eea26e11769926524033a2c73ed3274.bindPopup(popup_b85e8df7a06860b6a8b7d53c70900466)
+        ;
+
+        
+    
+    
+            marker_9eea26e11769926524033a2c73ed3274.bindTooltip(
+                `<div>
+                     Nigeria — NGN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9eea26e11769926524033a2c73ed3274.setIcon(icon_bf536c14a065589d7ab3b4c248a7bf37);
+            
+    
+            var marker_3bb939dc5c7dcc47cd12842d6e3d4209 = L.marker(
+                [-30.5595, 22.9375],
+                {
+}
+            ).addTo(map_e5abcb66db0b199174a5d96f1a025bc6);
+        
+    
+            var icon_ed3a0248572bbf90e4003f1263c79d22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "usd",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82bbec33234e7d9d7a85fbe6672b0cef = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_91d8b975f4c641b1cb7ceea68f36cfaa = $(`<div id="html_91d8b975f4c641b1cb7ceea68f36cfaa" style="width: 100.0%; height: 100.0%;">     <b>South Africa (ZAR)</b><br>     Pair: USDZAR<br>     Start rate: 17.1175<br>     End rate: 25.1352<br>     Exchange-rate change: 46.84%<br>     Local currency value change: -31.90%     </div>`)[0];
+                popup_82bbec33234e7d9d7a85fbe6672b0cef.setContent(html_91d8b975f4c641b1cb7ceea68f36cfaa);
+            
+        
+
+        marker_3bb939dc5c7dcc47cd12842d6e3d4209.bindPopup(popup_82bbec33234e7d9d7a85fbe6672b0cef)
+        ;
+
+        
+    
+    
+            marker_3bb939dc5c7dcc47cd12842d6e3d4209.bindTooltip(
+                `<div>
+                     South Africa — ZAR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3bb939dc5c7dcc47cd12842d6e3d4209.setIcon(icon_ed3a0248572bbf90e4003f1263c79d22);
+            
+</script>
+</html>
